@@ -21,4 +21,10 @@ Persistent Conversation History: All interactions are stored in Postgres for fut
 Frontend Enhancements: Markdown rendering, code formatting with copy-to-clipboard, and smooth typing animations.
 Fast Similarity Search: Uses pgvector + IVFFlat index for efficient retrieval.
 
+🔮 Future Improvements
+User authentication and multi-user conversation histories.
+React or Next.js frontend for scalable UI.
+Real-time updates with WebSockets.
+Conversation summarization and ranking.
+Multi-language support with language-specific embeddings.
 
