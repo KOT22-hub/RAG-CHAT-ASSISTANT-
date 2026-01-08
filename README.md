@@ -14,20 +14,11 @@ Built with Node.js, PostgreSQL + pgvector, Ollama LLMs, and a responsive fronten
 | Deployment     | Docker-ready                                                      |
 | Env Management | dotenv                                                            |
 
-📐 Architecture Overview
-User Input
-   ↓
-Frontend (Browser)
-   ↓
-POST /api/chat → Backend (Express)
-   ↓
-1️⃣ Generate embedding for prompt (Ollama)
-2️⃣ Retrieve top N similar conversations (Postgres + pgvector)
-3️⃣ Build context for AI model
-4️⃣ Send prompt + context to Ollama chat
-   ↓
-Response returned to frontend
-   ↓
-Conversation saved to Postgres
+⚡ Features
+RAG-Powered Chat: Retrieves similar past conversations and augments AI responses with context.
+Vector Embeddings: Uses Ollama embeddings to encode user queries for semantic similarity search.
+Persistent Conversation History: All interactions are stored in Postgres for future reference.
+Frontend Enhancements: Markdown rendering, code formatting with copy-to-clipboard, and smooth typing animations.
+Fast Similarity Search: Uses pgvector + IVFFlat index for efficient retrieval.
 
 
